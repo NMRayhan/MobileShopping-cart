@@ -24,9 +24,9 @@
 
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default" id="mobile-Minus"><i class="fas fa-minus"></i></button>
+                           <button class="btn btn-default" onclick="mobileChangeHandler(false)"><i class="fas fa-minus"></i></button>
                            <input type="text" class="form-control text-center" value="1" id="mobile-Count">
-                           <button class="btn btn-default" id="mobile-Plus"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="mobileChangeHandler(true)"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$<span id="mobilePrice">1219</span></h5>
                         <img src="images/remove.png" alt="" class="remove-item">
@@ -42,9 +42,9 @@
                      </div>
                      <div class="col-md-5 center-item">
                         <div class="input-group number-spinner">
-                           <button class="btn btn-default" id="case-Minus"><i class="fas fa-minus"></i></button>
+                           <button class="btn btn-default" onclick="caseChangeHandler(false)"><i class="fas fa-minus"></i></button>
                            <input type="text" class="form-control text-center" value="1" id="case-Count">
-                           <button class="btn btn-default" id="case-Plus"><i class="fas fa-plus"></i></button>
+                           <button class="btn btn-default" onclick="caseChangeHandler(true)"><i class="fas fa-plus"></i></button>
 
                         </div>
                         <h5>$<span id="casePrice">59</span></h5>

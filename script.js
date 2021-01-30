@@ -13,14 +13,6 @@ function mobileChangeHandler(isIncrease) {
     document.getElementById("mobilePrice").innerText = totalMobilePrice;
 }
 
-document.getElementById("mobile-Plus").addEventListener("click", function () {
-    mobileChangeHandler(true);
-})
-
-document.getElementById("mobile-Minus").addEventListener("click", function (event) {
-    mobileChangeHandler(false);
-})
-
 function caseChangeHandler(isIncrease) {
     const mobileInput = document.getElementById("case-Count");
     const mobileCount = parseInt(mobileInput.value)
@@ -34,10 +26,3 @@ function caseChangeHandler(isIncrease) {
     const totalMobilePrice = totalMobile * 59;
     document.getElementById("casePrice").innerText = totalMobilePrice;
 }
-document.getElementById("case-Plus").addEventListener("click", function () {
-    caseChangeHandler(true);
-})
-
-document.getElementById("case-Minus").addEventListener("click", function (event) {
-    caseChangeHandler(false);
-})
