@@ -29,12 +29,6 @@ function caseChangeHandler(isIncrease) {
     calculateTotal();
 }
 
-function taxCalculator(mobile, Case) {
-    var mobileTax = (.07 * mobile);
-    var caseTax = (.07 * Case);
-    return mobileTax + caseTax;
-}
-
 function calculateTotal() {
     const mobileInput = document.getElementById("mobile-Count");
     const mobileCount = parseInt(mobileInput.value);
@@ -45,7 +39,7 @@ function calculateTotal() {
 
     var totalPrice = (mobileCount * 1219) + (caseCount * 59);
     document.getElementById("sub-total").innerText = '$' + totalPrice;
-    var taxTotal = taxCalculator(mobileCount, caseCount);
+    var taxTotal = totalPrice * .07
 
     var tax = parseFloat(taxTotal.toFixed(2));
     var subtotalFloat = parseFloat(totalPrice.toFixed(2));
